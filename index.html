@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Legendary Barbers Shop</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="navbar">
+    <a href="#/" class="brand">
+      <svg class="logo-mark" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+        <img src="./images/logo.jpg" width="100" height="50" alt="Site Logo">
+      </svg>
+      <span class="brand-name">Legendary Barbers</span>
+    </a>
+    <nav class="links">
+      <a href="#/">Home</a>
+      <a href="#/services">Services</a>
+      <a href="#/about">About</a>
+      <a href="#/contact">Contact</a>
+      <a href="#/contact" class="btn">Book Now</a>
+    </nav>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <div class="page" data-route="/">
+    <section class="hero">
+      <div class="hero-grid">
+        <div>
+          <p class="eyebrow">Est. 2019 · Sunnyside, Pretoria</p>
+          <h1>Sharp cuts, built like everything else here — by hand.</h1>
+          <p class="lead">Legendary Barbers is a barbershop for people who notice craftsmanship. Precision fades, straight-razor finishes and a chair that's always worth the wait.</p>
+          <div class="hero-ctas">
+            <a href="#/contact" class="btn">Book an appointment</a>
+            <a href="#/services" class="btn btn-outline">View services &amp; pricing</a>
+          </div>
+        </div>
+        <div class="hero-art">
+          <img src="./images/imagessite-bg.jpg">
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <div class="page" data-route="/services">
+    <section>
+      <div class="section-head">
+        <p class="eyebrow">Services &amp; pricing</p>
+        <h2>Every service, priced plainly</h2>
+        <p>No hidden add-ons. Pick a service when you book.</p>
+      </div>
+      <div class="svc-list" id="serviceList"></div>
+    </section>
+  </div>
+
+  <div class="page" data-route="/about">
+    <section>
+      <div class="about-grid">
+        <div>
+          <p class="eyebrow">Our story</p>
+          <img src="./images/Our Story.jpg" class="about-photo">
+          <h2>Three barbers, one bench of tools passed down twice already</h2>
+          <p class="lead-text">Legendary Barbers started in a single-chair studio behind a cabinet maker's shop — which is why the name stuck. We still cut the way that first shop taught us: unhurried, precise, and finished with a hot towel rather than a rush out the door.</p>
+          <p class="lead-text">Walk-ins are welcome when a chair is free, but booking ahead guarantees your barber and your slot.</p>
+        </div>
+        <div class="barbers">
+          <div class="barber">
+            <img src="./images/Thlaloso Shai.jpg"  class="barber-mark">
+            <div>
+              <h3>Thlaloso Shai</h3>
+              <span>Owner &amp; Master Barber</span>
+              <p>Five years in the chair. Known for razor-sharp fades and a steady hand with straight razors.</p>
+            </div>
+          </div>
+          <div class="barber">
+            <img src="./images/Zimbini Roro.jpg" class="barber-mark">
+            <div>
+              <h3>Zimbini Roro</h3>
+              <span>Senior Barber</span>
+              <p>Specialises in textured cuts and beard sculpting. Books out fastest on weekends.</p>
+            </div>
+          </div>
+          <div class="barber">
+            <img src="./images/Mandla Nkosi.jpg" class="barber-mark">
+            <div>
+              <h3>Mandla Nkosi</h3>
+              <span>Barber</span>
+              <p>Great with first-timers and kids' cuts. Patient, precise, and quick with recommendations.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <div class="page" data-route="/contact">
+    <section>
+      <div class="contact-grid">
+        <div>
+          <div class="section-head">
+            <p class="eyebrow">Visit or book ahead</p>
+            <h2>Contact &amp; hours</h2>
+          </div>
+          <div class="info-block">
+            <h3>Address</h3>
+            <p>14 Foundry Lane, Sunnyside<br>Pretoria, 0002</p>
+          </div>
+          <div class="info-block">
+            <h3>Hours</h3>
+            <p>Mon–Fri 8:00–21:00<br>Sat-Sun 9:00–17:00</p>
+          </div>
+          <div class="info-block">
+            <h3>Phone &amp; email</h3>
+            <p>012 014 2280<br>hello@legendarybarbers.co.za</p>
+          </div>
+        </div>
+        <div>
+          <form id="bookingForm">
+            <div>
+              <label for="svc">Service</label>
+              <select id="svc" required></select>
+            </div>
+            <div class="field-row">
+              <div>
+                <label for="barber">Barber</label>
+                <select id="barber" required>
+                  <option value="No preference">No preference</option>
+                  <option value="Thlaloso Shai">Thlaloso Shai</option>
+                  <option value="Zimbini Roro">Zimbini Roro</option>
+                  <option value="Mandla Nkosi">Mandla Nkosi</option>
+                </select>
+              </div>
+              <div>
+                <label for="date">Date</label>
+                <input type="date" id="date" required>
+              </div>
+            </div>
+            <div class="field-row">
+              <div>
+                <label for="time">Time</label>
+                <input type="time" id="time" required>
+              </div>
+              <div>
+                <label for="name">Full name</label>
+                <input type="text" id="name" required>
+              </div>
+            </div>
+            <div class="field-row">
+              <div>
+                <label for="email">Email</label>
+                <input type="email" id="email" required>
+              </div>
+              <div>
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" required>
+              </div>
+            </div>
+            <button type="submit" class="btn">Confirm booking</button>
+          </form>
+          <div id="confirmBox">
+            <h3>You're booked, <span id="confName"></span></h3>
+            <p id="confDetails"></p>
+            <div class="confirm-actions">
+              <a class="btn" id="gcalLink" target="_blank" rel="noopener">Add to Google Calendar</a>
+              <a class="btn btn-outline" id="icsLink" download="birchwood-appointment.ics">Download calendar file (.ics)</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+</div>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <div class="brand" style="margin-bottom:10px;">
+          <svg class="logo-mark" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+              <img src="./images/logo.jpg" width="100" height="50" alt="Site Logo">
+          </svg>
+          <span class="brand-name">Legendary Barbers</span>
+        </div>
+        <p>A neighbourhood barbershop for people who notice the details.</p>
+      </div>
+      <div>
+        <h4>Site</h4>
+        <ul>
+          <li><a href="#/">Home</a></li>
+          <li><a href="#/services">Services</a></li>
+          <li><a href="#/about">About</a></li>
+          <li><a href="#/contact">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Book</h4>
+        <ul>
+          <li><a href="#/contact">Book an appointment</a></li>
+          <li><a href="tel:+27120142280">Call the shop</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Legal &amp; social</h4>
+        <ul>
+          <li><button class="link-btn" onclick="openModal('termsModal')">Terms &amp; Conditions</button></li>
+          <li><a href="#" onclick="return false;">Instagram</a></li>
+          <li><a href="#" onclick="return false;">Facebook</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© <span id="year"></span> Legendary Barbers Co.</span>
+      <span>Pretoria, South Africa</span>
+    </div>
+  </div>
+</footer>
+
+<div class="modal-backdrop" id="promoModal">
+  <div class="modal-box">
+    <button class="modal-close" onclick="closeModal('promoModal')">×</button>
+    <h3>First visit? Cut's on the house discount.</h3>
+    <p>New clients get 15% off any service when booked online.</p>
+    <div class="promo-code">LEGBARB15</div>
+    <p>Mention this code when you book, or tell your barber in the chair.</p>
+    <a href="#/contact" class="btn" onclick="closeModal('promoModal')">Book with LEGBARB15</a>
+  </div>
+</div>
+
+<div class="modal-backdrop" id="termsModal">
+  <div class="modal-box wide">
+    <button class="modal-close" onclick="closeModal('termsModal')">×</button>
+    <h3>Terms &amp; Conditions</h3>
+    <p><strong>Bookings.</strong> Appointments booked online are held for 10 minutes past the scheduled time.</p>
+    <p><strong>Cancellations.</strong> Please cancel or reschedule at least 4 hours in advance.</p>
+    <p><strong>Payment.</strong> Payment is due at the time of service. We accept cash, card and EFT.</p>
+    <p><strong>Health &amp; safety.</strong> Please tell your barber about any allergies or sensitivities beforehand.</p>
+    <p><strong>Privacy.</strong> Contact details are used only to manage your appointment and are never sold on.</p>
+  </div>
+</div>
+
+<script>
+
+
+document.getElementById('year').textContent = new Date().getFullYear();
+
+function openModal(id) {
+  document.getElementById(id).classList.add('open');
+}
+function closeModal(id) {
+  document.getElementById(id).classList.remove('open');
+}
+document.querySelectorAll('.modal-backdrop').forEach(function(m) {
+  m.addEventListener('click', function(e) {
+    if (e.target === m) m.classList.remove('open');
+  });
+});
+
+try {
+  if (!sessionStorage.getItem('bb_promo_seen')) {
+    setTimeout(function() {
+      openModal('promoModal');
+      sessionStorage.setItem('bb_promo_seen', '1');
+    }, 1400);
+  }
+} catch (e) {
+  setTimeout(function() { openModal('promoModal'); }, 1400);
+}
+
+const services = [
+  ["Signature Haircut", "Classic scissor-over-comb cut, tailored to your hair type.", 320, 30, "svc-signature.jpg"],
+  ["Skin Fade", "Precision fade blended to a natural finish.", 380, 45, "svc-fade.jpg"],
+  ["Beard Trim & Shape", "Line-up and shape with hot towel finish.", 180, 20, "svc-beard.jpg"],
+  ["Haircut + Beard Combo", "Our most-booked pairing.", 450, 50, "svc-combo.jpg"],
+  ["Kids Cut (12 & under)", "Patient, quick cuts for younger clients.", 190, 25, "svc-kids.jpg"],
+  ["Hot Towel Shave", "Traditional straight-razor shave.", 350, 35, "svc-shave.jpg"],
+  ["The Full Restoration", "Cut, beard, hot towel shave and wash.", 500, 75, "svc-restoration.jpg"]
+];
+
+const listEl = document.getElementById('serviceList');
+const svcSelect = document.getElementById('svc');
+services.forEach(function(s, i) {
+  listEl.innerHTML += '<div class="svc-card"><img src="images/' + s[4] + '" alt="' + s[0] + '" class="svc-photo"><div class="svc-card-body"><h3>' + s[0] + '</h3><p>' + s[1] + '</p><div class="svc-meta"><span class="svc-time">' + s[3] + ' min</span><span class="svc-price">R' + s[2] + '</span></div></div></div>';
+  const opt = document.createElement('option');
+  opt.value = i;
+  opt.textContent = s[0] + ' — R' + s[2] + ' (' + s[3] + ' min)';
+  svcSelect.appendChild(opt);
+});
+
+function pad(n) {
+  return String(n).padStart(2, '0');
+}
+
+function toGCalDate(d) {
+  return d.getUTCFullYear() + pad(d.getUTCMonth() + 1) + pad(d.getUTCDate())
+    + 'T' + pad(d.getUTCHours()) + pad(d.getUTCMinutes()) + '00Z';
+}
+
+document.getElementById('bookingForm').addEventListener('submit', function(e) {
+  e.preventDefault();
+
+  const svc = services[svcSelect.value];
+  const barber = document.getElementById('barber').value;
+  const dateVal = document.getElementById('date').value;
+  const timeVal = document.getElementById('time').value;
+  const name = document.getElementById('name').value.trim();
+  const email = document.getElementById('email').value.trim();
+  const phone = document.getElementById('phone').value.trim();
+
+  if (!dateVal || !timeVal || !name || !email || !phone) return;
+
+  const start = new Date(dateVal + 'T' + timeVal + ':00');
+  const end = new Date(start.getTime() + svc[3] * 60000);
+
+  const title = 'legendary Barbers— ' + svc[0];
+  const location = '14 Foundry Lane, Sunnyside, Pretoria, 0002';
+  const details = 'Service: ' + svc[0] + ' (R' + svc[2] + ', ' + svc[3] + ' min)\nBarber: ' + barber + '\nBooked for: ' + name;
+
+  document.getElementById('confName').textContent = name.split(' ')[0];
+  document.getElementById('confDetails').textContent =
+    svc[0] + ' with ' + barber + ' on ' + start.toLocaleDateString() + ' at ' + start.toLocaleTimeString();
+
+  const gcalUrl = 'https://calendar.google.com/calendar/render?action=TEMPLATE'
+    + '&text=' + encodeURIComponent(title)
+    + '&dates=' + toGCalDate(start) + '/' + toGCalDate(end)
+    + '&details=' + encodeURIComponent(details)
+    + '&location=' + encodeURIComponent(location);
+  document.getElementById('gcalLink').href = gcalUrl;
+
+  const ics = [
+    'BEGIN:VCALENDAR', 'VERSION:2.0', 'BEGIN:VEVENT',
+    'UID:' + Date.now() + '@Legendary Barbers.co.za',
+    'DTSTAMP:' + toGCalDate(new Date()),
+    'DTSTART:' + toGCalDate(start),
+    'DTEND:' + toGCalDate(end),
+    'SUMMARY:' + title,
+    'DESCRIPTION:' + details.replace(/\n/g, '\\n'),
+    'LOCATION:' + location,
+    'END:VEVENT', 'END:VCALENDAR'
+  ].join('\r\n');
+  const blob = new Blob([ics], { type: 'text/calendar' });
+  document.getElementById('icsLink').href = URL.createObjectURL(blob);
+
+  document.getElementById('confirmBox').classList.add('show');
+});
+
+function showRoute() {
+  let route = location.hash.replace('#', '') || '/';
+  const known = ['/', '/services', '/about', '/contact'];
+  if (!known.includes(route)) route = '/';
+
+  document.querySelectorAll('.page').forEach(function(page) {
+    page.classList.toggle('active', page.dataset.route === route);
+  });
+
+  window.scrollTo({ top: 0 });
+}
+
+window.addEventListener('hashchange', showRoute);
+showRoute();
+</script>
+</body>
+</html>
