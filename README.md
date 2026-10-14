@@ -5,4 +5,4 @@ Built with HTML, CSS, JavaScript
 Hosted on Netlify
 Responsive for mobile
 
-Author: Thlalo - WebMax Assessment 25/09/2026
+Author: Thlaloso Roro
