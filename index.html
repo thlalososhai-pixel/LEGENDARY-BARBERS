@@ -12,7 +12,7 @@
   <div class="navbar">
     <a href="#/" class="brand">
       <svg class="logo-mark" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
-        <img src="./images/logo.jpg" alt = "logo" width="100" height="50" alt="Site Logo">
+        <img src="./logo.jpg" width="100" height="50" alt="Site Logo">
       </svg>
       <span class="brand-name">Legendary Barbers</span>
     </a>
@@ -41,7 +41,7 @@
           </div>
         </div>
         <div class="hero-art">
-          <img src="./images/imagessite-bg.jpg">
+          <img src="./imagessite-bg.jpg">
         </div>
       </div>
     </section>
@@ -63,14 +63,14 @@
       <div class="about-grid">
         <div>
           <p class="eyebrow">Our story</p>
-          <img src="./images/Our Story.jpg" class="about-photo">
+          <img src="./Our Story.jpg" class="about-photo">
           <h2>Three barbers, one bench of tools passed down twice already</h2>
           <p class="lead-text">Legendary Barbers started in a single-chair studio behind a cabinet maker's shop — which is why the name stuck. We still cut the way that first shop taught us: unhurried, precise, and finished with a hot towel rather than a rush out the door.</p>
           <p class="lead-text">Walk-ins are welcome when a chair is free, but booking ahead guarantees your barber and your slot.</p>
         </div>
         <div class="barbers">
           <div class="barber">
-            <img src="./images/Thlaloso Shai.jpg"  class="barber-mark">
+            <img src="./Thlaloso Shai.jpg"  class="barber-mark">
             <div>
               <h3>Thlaloso Shai</h3>
               <span>Owner &amp; Master Barber</span>
@@ -78,7 +78,7 @@
             </div>
           </div>
           <div class="barber">
-            <img src="./images/Zimbini Roro.jpg" class="barber-mark">
+            <img src="./Zimbini Roro.jpg" class="barber-mark">
             <div>
               <h3>Zimbini Roro</h3>
               <span>Senior Barber</span>
@@ -86,7 +86,7 @@
             </div>
           </div>
           <div class="barber">
-            <img src="./images/Mandla Nkosi.jpg" class="barber-mark">
+            <img src="./Mandla Nkosi.jpg" class="barber-mark">
             <div>
               <h3>Mandla Nkosi</h3>
               <span>Barber</span>
@@ -183,7 +183,7 @@
       <div>
         <div class="brand" style="margin-bottom:10px;">
           <svg class="logo-mark" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
-              <img src="./images/logo.jpg" width="100" height="50" alt="Site Logo">
+              <img src="./logo.jpg" width="100" height="50" alt="Site Logo">
           </svg>
           <span class="brand-name">Legendary Barbers</span>
         </div>
@@ -279,13 +279,13 @@ const services = [
   ["Haircut + Beard Combo", "Our most-booked pairing.", 450, 50, "svc-combo.jpg"],
   ["Kids Cut (12 & under)", "Patient, quick cuts for younger clients.", 190, 25, "svc-kids.jpg"],
   ["Hot Towel Shave", "Traditional straight-razor shave.", 350, 35, "svc-shave.jpg"],
-  ["The Full Restoration", "Cut, beard, hot towel shave and wash.", 500, 75, "svc-restoration.jpg"]
+  ["The Full Restoration", "Cut, beard, hot towel shave and wash.", 500, 75, ".svc-restoration.jpg"]
 ];
 
 const listEl = document.getElementById('serviceList');
 const svcSelect = document.getElementById('svc');
 services.forEach(function(s, i) {
-  listEl.innerHTML += '<div class="svc-card"><img src="images/' + s[4] + '" alt="' + s[0] + '" class="svc-photo"><div class="svc-card-body"><h3>' + s[0] + '</h3><p>' + s[1] + '</p><div class="svc-meta"><span class="svc-time">' + s[3] + ' min</span><span class="svc-price">R' + s[2] + '</span></div></div></div>';
+  listEl.innerHTML += '<div class="svc-card"><img src="/' + s[4] + '" alt="' + s[0] + '" class="svc-photo"><div class="svc-card-body"><h3>' + s[0] + '</h3><p>' + s[1] + '</p><div class="svc-meta"><span class="svc-time">' + s[3] + ' min</span><span class="svc-price">R' + s[2] + '</span></div></div></div>';
   const opt = document.createElement('option');
   opt.value = i;
   opt.textContent = s[0] + ' — R' + s[2] + ' (' + s[3] + ' min)';
