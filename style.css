@@ -97,11 +97,11 @@ nav.links a:hover {
   border: 1px solid #3E6B94;
   padding: 10px 19px;
 }
-
 .hero {
-  padding: 96px 0 80px;
-  border-bottom: 1px solid var(--line);
-}
+  background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("./imagessite-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  }
 
 .hero-grid {
   display: grid;
